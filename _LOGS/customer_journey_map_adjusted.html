@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adjusted SOP Customer Journey Map</title>
+<style>
+  :root {
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #5f5e5a;
+    --color-text-tertiary: #888780;
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f1efe8;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --color-border-secondary: rgba(0,0,0,0.22);
+    --color-background-warning: #faeeda;
+    --color-text-warning: #854f0b;
+    --color-border-warning: #ba7517;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-primary: #e8e6de;
+      --color-text-secondary: #b4b2a9;
+      --color-text-tertiary: #888780;
+      --color-background-primary: #1e1e1c;
+      --color-background-secondary: #2c2c2a;
+      --color-border-tertiary: rgba(255,255,255,0.1);
+      --color-border-secondary: rgba(255,255,255,0.2);
+      --color-background-warning: #412402;
+      --color-text-warning: #fac775;
+      --color-border-warning: #854f0b;
+    }
+    .purple { background:#26215C !important; border-color:#7F77DD !important; color:#CECBF6 !important; }
+    .teal   { background:#04342C !important; border-color:#1D9E75 !important; color:#9FE1CB !important; }
+    .coral  { background:#4A1B0C !important; border-color:#D85A30 !important; color:#F5C4B3 !important; }
+    .red    { background:#501313 !important; border-color:#E24B4A !important; color:#F7C1C1 !important; }
+    .amber  { background:#412402 !important; border-color:#BA7517 !important; color:#FAC775 !important; }
+    .blue   { background:#042C53 !important; border-color:#378ADD !important; color:#B5D4F4 !important; }
+    .gray   { background:#2c2c2a !important; border-color:rgba(255,255,255,0.2) !important; color:#b4b2a9 !important; }
+    .partial { background:#2A2A1A !important; border-color:#A09830 !important; color:#D4D080 !important; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--color-text-primary);
+    background: var(--color-background-primary);
+    padding: 24px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
+  .subtitle { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 16px; }
+  .phase-block { margin-bottom: 20px; }
+  .phase-title { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .6px; color: var(--color-text-tertiary); margin-bottom: 8px; padding-left: 2px; }
+  .flow { display: flex; align-items: flex-start; gap: 0; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+  .node { min-width: 130px; max-width: 130px; display: flex; flex-direction: column; gap: 4px; position: relative; }
+  .node-title { padding: 7px 8px; border-radius: 7px; font-size: 11px; font-weight: 500; line-height: 1.3; text-align: center; border: 0.5px solid; }
+  .pill { padding: 4px 6px; border-radius: 5px; font-size: 10px; line-height: 1.3; text-align: center; border: 0.5px solid; width: 100%; }
+  .gap { padding: 3px 6px; border-radius: 4px; font-size: 10px; text-align: center; border: 0.5px solid; width: 100%; background: var(--color-background-warning); color: var(--color-text-warning); border-color: var(--color-border-warning); }
+  .arr { display: flex; align-items: flex-start; padding-top: 12px; flex-shrink: 0; }
+  .arr-line { width: 22px; height: 1px; background: var(--color-border-secondary); position: relative; margin-top: 14px; }
+  .arr-line::after { content: ''; position: absolute; right: -5px; top: -4px; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 5px solid var(--color-border-secondary); }
+  .branch-out { padding: 3px 6px; border-radius: 5px; font-size: 10px; text-align: center; border: 0.5px solid; width: 100%; margin-top: 3px; }
+  .legend { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; align-items: center; }
+  .ld { display: flex; align-items: center; gap: 4px; font-size: 10px; color: var(--color-text-secondary); }
+  .ldot { width: 9px; height: 9px; border-radius: 2px; flex-shrink: 0; }
+  .divider { height: 1px; background: var(--color-border-tertiary); margin: 16px 0; }
+  .purple { background: #EEEDFE; border-color: #7F77DD; color: #3C3489; }
+  .teal   { background: #E1F5EE; border-color: #1D9E75; color: #085041; }
+  .coral  { background: #FAECE7; border-color: #D85A30; color: #4A1B0C; }
+  .red    { background: #FCEBEB; border-color: #E24B4A; color: #791F1F; }
+  .amber  { background: #FAEEDA; border-color: #BA7517; color: #412402; }
+  .blue   { background: #E6F1FB; border-color: #378ADD; color: #0C447C; }
+  .gray   { background: var(--color-background-secondary); border-color: var(--color-border-secondary); color: var(--color-text-secondary); }
+  .partial { background: #FEFCE8; border-color: #A09830; color: #5C5810; }
+  .footer { margin-top: 14px; padding: 10px 12px; background: var(--color-background-secondary); border-radius: 8px; font-size: 11px; color: var(--color-text-secondary); line-height: 1.6; }
+  .stats { margin-top: 14px; padding: 12px; background: var(--color-background-secondary); border-radius: 8px; font-size: 11px; color: var(--color-text-secondary); line-height: 1.8; }
+  .stats strong { color: var(--color-text-primary); }
+  .stat-row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .stat-item { display: flex; align-items: center; gap: 6px; }
+  .stat-num { font-size: 18px; font-weight: 600; color: var(--color-text-primary); }
+</style>
+</head>
+<body>
+
+<h1>Adjusted SOP Customer Journey Map</h1>
+<p class="subtitle">Prescott Epoxy & Finishing Touch Painting -- Cross-referenced against actual SOP inventory (2026-03-21)</p>
+
+<div class="stats">
+  <div class="stat-row">
+    <div class="stat-item"><span class="stat-num">40</span> SOP slots mapped</div>
+    <div class="stat-item"><span class="stat-num">11</span> confirmed existing</div>
+    <div class="stat-item"><span class="stat-num">8</span> partial / embedded</div>
+    <div class="stat-item"><span class="stat-num">21</span> gaps to build</div>
+  </div>
+</div>
+<br>
+
+<div class="legend">
+  <div class="ld"><div class="ldot purple"></div>Stage / phase</div>
+  <div class="ld"><div class="ldot teal"></div>SOP exists (standalone)</div>
+  <div class="ld"><div class="ldot partial"></div>Partial -- embedded in larger doc or stub</div>
+  <div class="ld"><div class="ldot blue"></div>Automation / DripJobs</div>
+  <div class="ld"><div class="ldot coral"></div>Reject / loss branch</div>
+  <div class="ld"><div class="ldot amber"></div>Decision point</div>
+  <div class="ld"><div class="ldot" style="background:var(--color-background-warning);border:0.5px solid var(--color-border-warning)"></div>Gap -- SOP needed</div>
+</div>
+
+<!-- PHASE 1 -->
+<div class="phase-block">
+  <div class="phase-title">1 -- Lead generation & inbound</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Lead source</div>
+      <div class="gap">* Google Ads SOP</div>
+      <div class="gap">* LSA SOP</div>
+      <div class="gap">* Referral intake</div>
+      <div class="gap">* Direct mail intake</div>
+      <div class="gap">* Source attribution</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Inbound call (Dusty)</div>
+      <div class="pill partial">Office Asst. Duties (legacy, partial)</div>
+      <div class="pill partial">Discovery (in Total Sales Training)</div>
+      <div class="pill blue">DripJobs lead create</div>
+      <div class="gap">* Missed call / VM SOP</div>
+      <div class="gap">* Web form intake</div>
+      <div class="gap">* Inbound lead response SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title amber">Lead qualification</div>
+      <div class="pill teal">Lead Qual. Automation (Zapier/Claude)</div>
+      <div class="pill blue">API qualifier</div>
+      <div class="branch-out red">Unqualified --> drip</div>
+      <div class="branch-out teal">Qualified --> schedule</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Appt. booking</div>
+      <div class="pill partial">Office Asst. Duties (covers loosely)</div>
+      <div class="pill blue">DripJobs confirmation</div>
+      <div class="pill blue">Automated reminder</div>
+      <div class="gap">* Cancel / reschedule SOP</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 2 -->
+<div class="phase-block">
+  <div class="phase-title">2 -- Pre-estimate & on-site estimate</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Estimator prep</div>
+      <div class="pill teal">PEC Sales SOP (Landen daily workflow)</div>
+      <div class="gap">* Route / drive-time</div>
+      <div class="gap">* Kit checklist</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">On-site estimate</div>
+      <div class="pill teal">PE Sales Script (Landen)</div>
+      <div class="pill teal">FTP Sales Script (Doug)</div>
+      <div class="pill partial">Good-Better-Best (incomplete, pricing blanks)</div>
+      <div class="gap">* Photo doc SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title amber">Close attempt</div>
+      <div class="pill partial">Closing (in Total Sales Training, not standalone)</div>
+      <div class="pill blue">Proposal via DripJobs</div>
+      <div class="branch-out teal">Accepted --> deposit</div>
+      <div class="branch-out coral">Not yet --> follow-up</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Deposit + contract</div>
+      <div class="gap">* Acceptance SOP</div>
+      <div class="gap">* Enhancify offer SOP</div>
+      <div class="gap">* Contract SOP</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 3 -->
+<div class="phase-block">
+  <div class="phase-title">3 -- Follow-up (for unconverted leads)</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Follow-up sequence</div>
+      <div class="pill partial">Follow-up (in Total Sales Training, not standalone)</div>
+      <div class="pill blue">DripJobs drip</div>
+      <div class="gap">* Attempt cadence SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title amber">Objection handling</div>
+      <div class="pill partial">Objections (in Total Sales Training, not standalone)</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title amber">Price / financing offer</div>
+      <div class="gap">* Financing pitch SOP</div>
+      <div class="branch-out teal">Accepts --> scheduling</div>
+      <div class="branch-out coral">Rejects --> long-term drip</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Long-term nurture</div>
+      <div class="pill blue">Engagement drips</div>
+      <div class="gap">* Seasonal content SOP</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 4 -->
+<div class="phase-block">
+  <div class="phase-title">4 -- Scheduling & pre-job</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Scheduling</div>
+      <div class="gap">* Scheduling SOP</div>
+      <div class="pill blue">DripJobs job create</div>
+      <div class="gap">* Crew assignment SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Color + materials</div>
+      <div class="gap">* Color confirmation SOP</div>
+      <div class="gap">* Materials order SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Job comms sequence</div>
+      <div class="pill blue">DripJobs automations</div>
+      <div class="pill teal">PE-OPS-001 (Andrew job mgmt + handoff)</div>
+      <div class="gap">* Crew briefing SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Job coming up call</div>
+      <div class="gap">* Call SOP + script</div>
+      <div class="gap">* Customer prep SOP</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 5 -->
+<div class="phase-block">
+  <div class="phase-title">5 -- Job execution</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Job day arrival</div>
+      <div class="gap">* Arrival SOP</div>
+      <div class="gap">* Before photo SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Job site execution</div>
+      <div class="gap">* Interior paint SOP (FTP exec -- only estimate SOP exists)</div>
+      <div class="gap">* Exterior paint SOP (FTP exec -- nothing exists)</div>
+      <div class="pill teal">Epoxy System Training (job site ops)</div>
+      <div class="gap">* Mid-job QC check</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">On-site marketing</div>
+      <div class="pill teal">Social Media SOP</div>
+      <div class="gap">* Neighbor outreach SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Daily reporting</div>
+      <div class="gap">* Daily report SOP</div>
+      <div class="pill teal">Change Order SOP (PE)</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 6 -->
+<div class="phase-block">
+  <div class="phase-title">6 -- Job completion & handoff</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Final walkthrough</div>
+      <div class="pill teal">Job Walk SOP (Landen)</div>
+      <div class="gap">* Walkthrough script</div>
+      <div class="gap">* After photo SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Payment collection</div>
+      <div class="gap">* Final payment SOP</div>
+      <div class="gap">* Payment dispute SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Review + referral ask</div>
+      <div class="gap">* Review request SOP</div>
+      <div class="gap">* Referral ask SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Warranty delivery</div>
+      <div class="gap">* Warranty SOP</div>
+      <div class="gap">* Warranty claim SOP</div>
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+
+<!-- PHASE 7 -->
+<div class="phase-block">
+  <div class="phase-title">7 -- Post-job & lifetime value</div>
+  <div class="flow">
+    <div class="node">
+      <div class="node-title purple">Job costing (Andrew)</div>
+      <div class="pill teal">PE-OPS-001 (job costing in Protiv)</div>
+      <div class="pill partial">Receipt Capture (PE-FIN-001, stub only)</div>
+      <div class="gap">* Job close-out SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Re-engagement</div>
+      <div class="gap">* Re-engagement SOP</div>
+      <div class="pill blue">DripJobs drips</div>
+      <div class="gap">* Annual sequence SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">Referral program</div>
+      <div class="gap">* Referral program SOP</div>
+      <div class="gap">* Crew referral SOP</div>
+      <div class="gap">* Bonus tracking SOP</div>
+    </div>
+    <div class="arr"><div class="arr-line"></div></div>
+    <div class="node">
+      <div class="node-title purple">VIP / upsell</div>
+      <div class="gap">* Upsell SOP</div>
+      <div class="gap">* VIP program SOP</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <strong style="color:var(--color-text-primary)">7 phases  --  28 stages  --  40 SOP slots</strong><br>
+  Green = standalone SOP confirmed  --  Yellow = partial (embedded in larger doc or stub)  --  Blue = automation  --  Orange = gap, needs to be built<br><br>
+  <strong style="color:var(--color-text-primary)">Key changes from original map:</strong><br>
+  -- 11 SOPs previously marked green were downgraded: 8 to partial (yellow), 3 to gap (orange)<br>
+  -- "Google Ads SOP," "LSA SOP," and "Referral intake" had no matching documents anywhere -- moved to gaps<br>
+  -- "Interior SOP" and "Exterior SOP" for FTP execution do not exist (only an estimate SOP exists) -- moved to gaps<br>
+  -- Closing, follow-up, objection handling, and discovery are sections inside Total Sales Training, not standalone SOPs<br>
+  -- "Acceptance SOP" had no matching document -- moved to gap<br>
+  -- Receipt Capture SOP is a stub with blank fields -- downgraded to partial<br>
+  -- Good-Better-Best has unfilled pricing -- downgraded to partial<br>
+  -- Office/booking SOPs only loosely covered by legacy Office Assistant Duties doc -- downgraded to partial<br>
+  -- Change Order SOP correctly exists. Job Walk SOP correctly exists. Moved to accurate positions.<br>
+  -- "Re-engagement SOP" and "Referral SOP" had no matching standalone documents -- moved to gaps
+</div>
+
+<div class="stats" style="margin-top:10px;">
+  <strong style="color:var(--color-text-primary)">Coverage by phase:</strong><br>
+  Phase 1 (Lead Gen): 1 confirmed, 3 partial, 8 gaps<br>
+  Phase 2 (Estimate): 3 confirmed, 2 partial, 5 gaps<br>
+  Phase 3 (Follow-up): 0 confirmed, 3 partial, 2 gaps<br>
+  Phase 4 (Scheduling): 1 confirmed, 0 partial, 5 gaps<br>
+  Phase 5 (Execution): 3 confirmed, 0 partial, 5 gaps<br>
+  Phase 6 (Completion): 1 confirmed, 0 partial, 6 gaps<br>
+  Phase 7 (Post-job): 1 confirmed, 1 partial, 7 gaps<br>
+  <br>
+  <strong style="color:var(--color-text-primary)">Worst coverage:</strong> Phase 6 (Completion) and Phase 7 (Post-job) -- almost entirely undocumented. This is where revenue leaks happen (missed payments, no review asks, no referral system, no warranty process).
+</div>
+
+</body>
+</html>
