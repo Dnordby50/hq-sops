@@ -297,7 +297,7 @@ At month-end (or within first week of following month):
    - Revenue (column I) ✓
    - Material costs (column S) ✓ — PEC only
    - Wages (column U) ✓
-   - GP% calculating correctly (column X) ✓
+   - GP% calculating correctly (column BZ) ✓
 3. Flag any jobs still missing data → escalate to Dylan
 4. Run Watchdog and resolve all alerts for the month
 5. Report completion to Dylan via Slack:
