@@ -1,9 +1,9 @@
 # SOP Master Index
 
-**Generated:** 2026-03-21 | **Last Updated:** 2026-04-12
-**Filed in Local SOP Hub:** 10 active + 1 retired
+**Generated:** 2026-03-21 | **Last Updated:** 2026-04-13
+**Filed in Local SOP Hub:** 21 active + 1 retired
 **Drive-Only SOPs (not yet filed locally):** 15
-**Prescott Epoxy (local):** 7
+**Prescott Epoxy (local):** 18
 **Finishing Touch Painting (local):** 0
 **Shared (local):** 3
 
@@ -21,6 +21,17 @@ These SOPs are formally filed in the SOP Hub and synced to GitHub via Obsidian G
 | PEC-SALES-002 | Personalized Follow-Up Drafting via AI | PEC | SALES | .md | SOP Hub/PEC/SALES/ |
 | PEC-FIN-001 | Monthly Job Costing Materials Entry | PEC | FIN | .md | SOP Hub/PEC/FIN/ |
 | PEC-ADMIN-001 | Price List Organization | PEC | ADMIN | .docx | SOP Hub/PEC/ADMIN/ |
+| PEC-OPS-003 | Metallic Additive Product Training | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-004 | High Wear Urethane Product Training | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-005 | Polyaspartic HS Product Training | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-006 | Simiron 1100 SL Product Training | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-007 | Job Site Operations | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-008 | Concrete Patching Procedures | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-009 | Concrete Grinding Procedures | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-010 | Flake System Installation | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-011 | Metallic System Installation | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-012 | Off-Site Procedures and Truck Inventory | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-ADMIN-002 | Contract Terms and Conditions | PEC | ADMIN | .docx | SOP Hub/PEC/ADMIN/ |
 | PEC-SAFETY-001 | Jobsite PPE and Safety Requirements | PEC | SAFETY | .docx | SOP Hub/PEC/SAFETY/ |
 | SHARED-SALES-001 | On Site Referral Pipeline | Shared | SALES | .md | SOP Hub/Shared/SALES/ |
 | SHARED-ADMIN-001 | MBP Monthly Marketing Spend Update | Shared | ADMIN | .md | SOP Hub/Shared/ADMIN/ |
@@ -132,11 +143,11 @@ SOPs/  (root: 1P8eAxJzIpQEb1mAXpGm7RSEuk9ASLCao)
 | Department | PEC | FTP | Shared | Total |
 |---|---|---|---|---|
 | SALES | 2 | 0 | 1 | 3 |
-| OPS | 2 | 0 | 0 | 2 |
+| OPS | 12 | 0 | 0 | 12 |
 | FIN | 1 | 0 | 0 | 1 |
-| ADMIN | 1 | 0 | 2 | 3 |
+| ADMIN | 2 | 0 | 2 | 4 |
 | SAFETY | 1 | 0 | 0 | 1 |
-| **Total** | **7** | **0** | **3** | **10** |
+| **Total** | **18** | **0** | **3** | **21** |
 
 ---
 
@@ -152,4 +163,4 @@ SOPs/  (root: 1P8eAxJzIpQEb1mAXpGm7RSEuk9ASLCao)
 
 ---
 
-Source: SOP Hub | Generated 2026-04-12
+Source: SOP Hub | Generated 2026-04-13
