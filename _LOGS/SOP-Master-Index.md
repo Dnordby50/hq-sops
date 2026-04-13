@@ -1,169 +1,155 @@
 # SOP Master Index
 
-**Generated:** 2026-03-21 | **Last Updated:** 2026-04-05
-**Total SOPs Found:** 19 (across Google Drive and local vault)
-**Formally Filed in SOP Hub:** 1
-**Prescott Epoxy:** 13
-**Finishing Touch Painting:** 3
-**Shared (Both Companies):** 3
+**Generated:** 2026-03-21 | **Last Updated:** 2026-04-12
+**Filed in Local SOP Hub:** 10 active + 1 retired
+**Drive-Only SOPs (not yet filed locally):** 15
+**Prescott Epoxy (local):** 7
+**Finishing Touch Painting (local):** 0
+**Shared (local):** 3
 
 ---
 
-## Formally Filed SOPs
+## Local SOP Hub -- Active SOPs
 
-| SOP ID | Title | Company | Dept | Location |
+These SOPs are formally filed in the SOP Hub and synced to GitHub via Obsidian Git (`Dnordby50/hq-sops`).
+
+| SOP ID | Title | Company | Dept | Format | Location |
+|---|---|---|---|---|---|
+| PEC-OPS-001 | Andrew Remote VA -- Weekly Cadence and Job Management | PEC | OPS | .docx | SOP Hub/PEC/OPS/ |
+| PEC-OPS-002 | Daily Crew Schedule Briefing | PEC | OPS | .md | SOP Hub/PEC/OPS/ |
+| PEC-SALES-001 | MBP Marketing Plan Monthly Update | PEC | SALES | .md | SOP Hub/PEC/SALES/ |
+| PEC-SALES-002 | Personalized Follow-Up Drafting via AI | PEC | SALES | .md | SOP Hub/PEC/SALES/ |
+| PEC-FIN-001 | Monthly Job Costing Materials Entry | PEC | FIN | .md | SOP Hub/PEC/FIN/ |
+| PEC-ADMIN-001 | Price List Organization | PEC | ADMIN | .docx | SOP Hub/PEC/ADMIN/ |
+| PEC-SAFETY-001 | Jobsite PPE and Safety Requirements | PEC | SAFETY | .docx | SOP Hub/PEC/SAFETY/ |
+| SHARED-SALES-001 | On Site Referral Pipeline | Shared | SALES | .md | SOP Hub/Shared/SALES/ |
+| SHARED-ADMIN-001 | MBP Monthly Marketing Spend Update | Shared | ADMIN | .md | SOP Hub/Shared/ADMIN/ |
+| SHARED-ADMIN-002 | QUO to Google Sheets Zapier Integration Setup | Shared | ADMIN | .md | SOP Hub/Shared/ADMIN/ |
+
+### Naming Flags
+
+- `SOP -- MBP Marketing Plan Monthly Update -- PEC-SALES-001.md` does not follow the standard convention (ID should lead the filename). Recommend renaming to `PEC-SALES-001 -- MBP Marketing Plan Monthly Update.md`.
+
+---
+
+## Retired SOPs
+
+| SOP ID | Title | Reason | Retired Date | Location |
 |---|---|---|---|---|
-| PEC-OPS-001 | Andrew Remote VA -- Weekly Cadence and Job Management | PEC | OPS | SOP Hub/PEC/OPS/ |
+| PEC-FIN-001 (original) | Protiv ProPay Close-Out SOP | Protiv replaced by Job Costing Master Google Sheet | 2026-04-12 | SOP Hub/_REVIEW/ |
 
-*This SOP consolidates the prior "Andrew SOP -- Job Sheets" (vault), "Andrew Weekly Cadence and Roles" (Drive), and "Andrew SOPs and Schedule" (Drive) into a single authoritative document.*
+*The PEC-FIN-001 ID has been reassigned to "Monthly Job Costing Materials Entry," which documents the replacement workflow.*
 
 ---
 
-## Google Drive SOPs
+## Google Drive SOPs (Not Yet Filed Locally)
 
-| # | Title | Company | Department | Location (Drive Folder) | Last Modified | Notes |
+These SOPs exist in Google Drive under the reorganized folder structure (completed 2026-04-05) but have not been formally filed in the local SOP Hub or assigned standard IDs.
+
+| # | Title | Company | Department | Drive Location | Last Modified | Notes |
 |---|---|---|---|---|---|---|
-| 1 | PRESCOTT EPOXY - CHANGE ORDER SOP | PEC | OPS | SOPs > Prescott Epoxy | 2025-12-01 | Well-structured SOP. Needs SOP ID assigned. |
-| 2 | Job Walk SOP - Landen | PEC | OPS | Root/Shared Drive | 2026-02-23 | Field quality SOP for Landen. Needs ID. |
-| 3 | Epoxy System Training (Job Site Operations SOP) | PEC | OPS | Root/Shared Drive | 2026-02-16 | Large training doc. Covers job site ops, work order review, materials. |
-| 4 | PEC Sales SOP | PEC | SALES | SOPs > Leads & Sales (subfolder) | 2025-05-14 | Dylan daily workflow and estimate process. |
-| 5 | PEC SOP for BusyBusy (Time Tracking) | PEC | OPS | Root SOPs folder | 2025-05-15 | Clock in/out and time tracking procedures. |
-| 6 | Social Media SOP | PEC | ADMIN | Root/Shared Drive | 2026-02-23 | Weekly posting cadence and content capture. |
-| 7 | SOP- Sales Process | PEC/Both | SALES | SOPs > Leads & Sales (subfolder) | 2024-11-07 | Very large doc (too large to fetch). Likely comprehensive sales process. |
-| 8 | Total Sales Training | Both | SALES | SOPs > Leads & Sales | 2026-03-02 | Complete sales playbook for both companies. 26K+ chars. |
-| 9 | Interior Paint Estimate SOP | FTP | SALES | SOPs > Customer Journey | 2025-01-23 | Doug's interior estimate process. |
-| 10 | SOP: Shop Cleaning Procedure | Both | ADMIN | Office SOPs | 2025-12-15 | Weekly shop cleaning routine. Complete. |
-| 11 | Office Assistant Duties | Both | ADMIN | Office SOPs | 2025-02-11 | Dusty's daily/weekly task list. Legacy format. |
-| 12 | Certificate of Insurance | Both | ADMIN | Office SOPs | 2024-06-05 | Quick-reference for COI generation. |
-| 13 | Payroll | Both | FIN | Office SOPs | 2024-06-05 | ADP payroll processing steps. |
-| 14 | Andrew Weekly Cadence and Roles | Both | ADMIN | Andrew subfolder | 2026-03-03 | Dusty vs. Andrew role clarity. Detailed weekly cadence. |
-| 15 | SOP: Project Manager Role | Both | OPS | SOPs > Job Descriptions | 2025-01-08 | PM role responsibilities. |
+| 1 | PRESCOTT EPOXY - CHANGE ORDER SOP | PEC | OPS | SOPs > PEC > OPS | 2025-12-01 | Well-structured. Needs SOP ID. |
+| 2 | Job Walk SOP - Landen | PEC | OPS | SOPs > PEC > OPS | 2026-02-23 | Field quality SOP. Needs ID. |
+| 3 | Epoxy System Training (Job Site Operations SOP) | PEC | OPS | SOPs > PEC > OPS | 2026-02-16 | Large training doc. Job site ops, materials. |
+| 4 | PEC Sales SOP | PEC | SALES | SOPs > PEC > SALES | 2025-05-14 | Dylan daily workflow and estimate process. |
+| 5 | PEC SOP for BusyBusy (Time Tracking) | PEC | OPS | SOPs > PEC > OPS | 2025-05-15 | Clock in/out procedures. |
+| 6 | Social Media SOP | PEC | ADMIN | SOPs > PEC > ADMIN | 2026-02-23 | Weekly posting cadence. |
+| 7 | PEC Receipt SOP | PEC | FIN | SOPs > PEC > FIN | Unknown | Stub with placeholders. |
+| 8 | SOP- Sales Process | Both | SALES | SOPs > Shared > SALES | 2024-11-07 | Very large doc. Comprehensive sales process. |
+| 9 | Total Sales Training | Both | SALES | SOPs > Shared > SALES | 2026-03-02 | Complete sales playbook. 26K+ chars. |
+| 10 | Interior Paint Estimate SOP | FTP | SALES | SOPs > FTP > SALES | 2025-01-23 | Doug's interior estimate process. |
+| 11 | SOP: Shop Cleaning Procedure | Both | ADMIN | SOPs > Shared > ADMIN | 2025-12-15 | Weekly shop cleaning routine. |
+| 12 | Office Assistant Duties | Both | ADMIN | SOPs > Shared > ADMIN | 2025-02-11 | Dusty's daily/weekly task list. Legacy format. |
+| 13 | Payroll | Both | FIN | SOPs > Shared > FIN | 2024-06-05 | ADP payroll processing steps. |
+| 14 | Andrew Weekly Cadence and Roles | Both | ADMIN | SOPs > Shared > ADMIN | 2026-03-03 | Superseded by PEC-OPS-001 for Andrew-specific content. |
+| 15 | SOP: Project Manager Role | Both | OPS | SOPs > Shared > OPS | 2025-01-08 | PM role responsibilities. |
 
-### Drive Reference Docs (Not SOPs but SOP-adjacent)
-
-| Title | Type | Location | Notes |
-|---|---|---|---|
-| Office SOP Roadmap | Checklist | Office SOPs | Tracks which SOPs exist vs. needed. Partially complete. |
-| Overall Office Task List | Task list | Office SOPs | Legacy task list for office role. |
-| Andrew SOPs and Schedule | Link doc | Andrew subfolder | Index pointing to other SOP docs. |
-| Office Admin Competency Model | HR doc | Drive | Performance standards, not a procedure. |
-| Office Admin Performance Review | HR doc | Drive | Review template. |
-| Floor Lead Performance Review | HR doc | Drive | Review template. |
-| Customer Journey SOP map | Process map | SOPs > Future | Too large to fetch. Likely comprehensive journey map. |
+**Not found:** Certificate of Insurance SOP. May have been deleted or was never a standalone doc.
 
 ---
 
-## Local Vault SOPs (Obsidian)
+## Local Vault SOPs (Outside SOP Hub)
+
+These exist in the Obsidian vault but outside the SOP Hub folder structure. They should be evaluated for filing or consolidation.
 
 | # | Title | Company | Department | Vault Location | Notes |
 |---|---|---|---|---|---|
-| 1 | Receipt Capture SOP - PEC-FIN-001 | PEC | FIN | 03 - People & HR/Docs/ | Stub only. Points to Drive. Many placeholders unfilled. |
-| 2 | Andrew SOP - Job Sheets | PEC | OPS | 01 - PEC/Operations/SOPs/ | **SUPERSEDED by PEC-OPS-001.** Redirect stub only. |
-| 3 | Crew Bonus Structure | PEC | FIN | 01 - PEC/Operations/SOPs/ | Policy doc. Many placeholders unfilled (bonus amounts, thresholds). |
+| 1 | Receipt Capture SOP - PEC-FIN-001 | PEC | FIN | 03 - People & HR/Docs/ | Stub only. Placeholders unfilled. |
+| 2 | Andrew SOP - Job Sheets | PEC | OPS | 01 - PEC/Operations/SOPs/ | SUPERSEDED by PEC-OPS-001. Redirect stub. |
+| 3 | Crew Bonus Structure | PEC | FIN | 01 - PEC/Operations/SOPs/ | Policy doc. Placeholders unfilled. |
 | 4 | PEC Sales Script - Dylan | PEC | SALES | 01 - PEC/Sales/Scripts/ | On-site consultation script. Well-structured. |
 | 5 | FTP Sales Script - Doug | FTP | SALES | 02 - FTP/Sales/Scripts/ | Two-phase sales script. Well-structured. |
-| 6 | Lead Qualification Automation | PEC | OPS | 01 - PEC/ | Tech process doc for Zapier + Claude API lead scoring. |
-
-### Local Reference Docs (Not SOPs but process-relevant)
-
-| Title | Location | Notes |
-|---|---|---|
-| Good-Better-Best Packages | 01 - PEC/Sales/Proposals/ | Package reference. Many pricing placeholders unfilled. |
-| TPL - SOP | 08 - Templates/ | SOP template. Ready for use. |
+| 6 | Lead Qualification Automation | PEC | OPS | 01 - PEC/ | Tech process doc for Zapier + Claude API. |
 
 ---
 
-## SOP Hub Filing Status
+## Drive Reference Docs (Not SOPs)
 
-No SOPs formally filed in the local SOP Hub yet. All SOPs currently live in Google Drive or in the Obsidian vault (outside the SOP Hub).
+| Title | Type | Location | Notes |
+|---|---|---|---|
+| Office SOP Roadmap | Checklist | Office SOPs | Tracks which SOPs exist vs. needed. |
+| Overall Office Task List | Task list | Office SOPs | Legacy task list. |
+| Andrew SOPs and Schedule | Link doc | Andrew subfolder | Index pointing to other docs. |
+| Office Admin Competency Model | HR doc | Drive | Performance standards. |
+| Office Admin Performance Review | HR doc | Drive | Review template. |
+| Floor Lead Performance Review | HR doc | Drive | Review template. |
+| Customer Journey SOP map | Process map | SOPs > Future | Too large to fetch. |
 
-### New Drive Folder Structure (Created 2026-03-21)
+---
+
+## Drive Folder Structure
 
 ```
 SOPs/  (root: 1P8eAxJzIpQEb1mAXpGm7RSEuk9ASLCao)
   PEC/          (1v9_6crRIrvDSMFdVMnIN4CXIJdzxS5Ep)
-    SALES/
-    OPS/
-    FIN/
-    ADMIN/
-    SAFETY/
-    Untitled folder/   <-- DELETE THIS (accidental creation)
+    SALES/  OPS/  FIN/  ADMIN/  SAFETY/
+    Untitled folder/   <-- DELETE THIS
   FTP/         (1DlRu1nhWvhnDiEcdQSjzgkgm9BiH9bSk)
-    SALES/
-    OPS/
-    FIN/
-    ADMIN/
-    SAFETY/
+    SALES/  OPS/  FIN/  ADMIN/  SAFETY/
   Shared/      (1LKwaNqlFfjlnQauoJvGXUyvzDiz3W7ZC)
-    SALES/
-    OPS/
-    FIN/
-    ADMIN/
-    SAFETY/
-  --- Legacy folders (keep until all files moved) ---
-  Office SOPs/
-  Leads & Sales/
-  Prescott Epoxy/
-  Job Descriptions/
-  Customer Journey/
-  Future/
-  Employment Agreements/
-  Meetings/
-  Business Planning and Review/
-  Andrew/
+    SALES/  OPS/  FIN/  ADMIN/  SAFETY/
+  --- Legacy folders (pending deletion) ---
+  Office SOPs/ | Leads & Sales/ | Prescott Epoxy/ | Job Descriptions/
+  Customer Journey/ | Future/ | Employment Agreements/ | Meetings/
+  Business Planning and Review/ | Andrew/
 ```
 
-### File Move Checklist (Updated 2026-04-05)
-
-**Into PEC/OPS:** (already in place per audit)
-- [x] PRESCOTT EPOXY - CHANGE ORDER SOP
-- [x] Job Walk SOP
-- [x] Epoxy System Training / Job Site Operations SOP
-- [x] PEC SOP for BusyBusy - Time Tracking
-
-**Into PEC/SALES:** (already in place per audit)
-- [x] PEC Sales SOP
-
-**Into PEC/ADMIN:** (already in place per audit)
-- [x] Social Media SOP
-
-**Into PEC/FIN:** (already in place per audit)
-- [x] PEC Receipt SOP.docx
-
-**Into FTP/SALES:** (already in place per audit)
-- [x] Interior Paint Estimate SOP
-
-**Into Shared/SALES:**
-- [x] Total Sales Training (already in place per audit)
-- [x] SOP- Sales Process (moved from FTP/SALES to Shared/SALES on 2026-04-05)
-
-**Into Shared/ADMIN:**
-- [x] SOP: Shop Cleaning Procedure (already in place per audit)
-- [x] Office Assistant Duties (already in place per audit)
-- [x] Andrew Weekly Cadence and Roles (already in place per audit)
-- [ ] Certificate of Insurance -- NOT FOUND in Drive. May have been deleted or was never a standalone SOP doc. Original listing was a Google Doc in "Office SOPs" from June 2024.
-
-**Into Shared/FIN:**
-- [x] Payroll-SOP (moved from Shared/ADMIN to Shared/FIN on 2026-04-05)
-
-**Into Shared/OPS:**
-- [x] Project Manager.docx (moved from Job Descriptions & Agreements to Shared/OPS on 2026-04-05)
-
-**Cleanup:**
-- [ ] Delete "Untitled folder" inside PEC/
-- [ ] Once all files are moved, delete empty legacy folders
-- [ ] Remove accidental star from "SOP- Sales Process" file
+**GitHub repo:** `Dnordby50/hq-sops` (public) -- synced via Obsidian Git plugin (10-min intervals)
 
 ---
 
-## SOPs by Department Summary
+## Cleanup Still Needed
+
+- [ ] Delete "Untitled folder" inside PEC/ on Drive
+- [ ] Delete empty legacy folders on Drive
+- [ ] Remove accidental star from "SOP- Sales Process" on Drive
+- [ ] Rename PEC-SALES-001 file to follow naming convention (ID-first)
+
+---
+
+## SOPs by Department Summary (Local Hub Only)
 
 | Department | PEC | FTP | Shared | Total |
 |---|---|---|---|---|
-| SALES | 3 | 2 | 2 | 7 |
-| OPS | 5 | 0 | 1 | 6 |
-| FIN | 2 | 0 | 1 | 3 |
+| SALES | 2 | 0 | 1 | 3 |
+| OPS | 2 | 0 | 0 | 2 |
+| FIN | 1 | 0 | 0 | 1 |
 | ADMIN | 1 | 0 | 2 | 3 |
-| SAFETY | 0 | 0 | 0 | 0 |
-| HR | 0 | 0 | 0 | 0 |
-| **Total** | **11** | **2** | **6** | **19** |
+| SAFETY | 1 | 0 | 0 | 1 |
+| **Total** | **7** | **0** | **3** | **10** |
+
+---
+
+## Priority Gaps (Updated 2026-04-12)
+
+1. **FTP has zero SOPs in local hub** -- 1 exists in Drive (Interior Paint Estimate), plus sales scripts in vault. None formally filed.
+2. **Job costing workflow SOP (Protiv replacement)** -- Open Loop item assigned to Cowork VA. Waiting on workflow stabilization.
+3. **Inbound lead response SOP for Dusty** -- no documentation on how discovery calls should be handled.
+4. **Estimate-to-install handoff SOP** -- gap between sales close and crew dispatch.
+5. **Company card / petty cash management SOP** -- no financial controls documented.
+6. **Receipt Capture SOP** -- exists as stub only, placeholders unfilled.
+7. **Crew Bonus Structure** -- policy doc with unfilled fields (bonus amounts, thresholds).
+
+---
+
+Source: SOP Hub | Generated 2026-04-12
