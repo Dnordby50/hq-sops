@@ -1,4 +1,7 @@
-# SH-FIN-001 — Job Costing Workflow (Protiv Replacement)
+# SHARED-FIN-001 Job Costing Workflow (Protiv Replacement)
+
+<!-- Renamed from SH-FIN-001 to SHARED-FIN-001 on 2026-04-19 to match naming convention; file moved from Shared/ADMIN to Shared/FIN. -->
+
 
 **SOP Version:** 1.0
 **Last Updated:** 2026-04-12
